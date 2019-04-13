@@ -1,12 +1,18 @@
-.groceries__title {
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column__title {
   margin-left: 10px;
 }
 
-.groceries__wrap {
-  width: 50%;
+.column__wrap {
+  width: 40%;
+  margin: 0 20px;
 }
 
-.groceries__item:nth-child(2n) {
+.groceries__item:nth-child(2n + 1) {
   background-color: grey;
 }
 

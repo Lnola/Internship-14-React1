@@ -18,18 +18,6 @@ class Grocery extends Component {
     this.setState({ plusHoverClass: "" });
   };
 
-  handleClick = grocery => {
-    let newSelection = [];
-    const { selectedGroceries } = this.state;
-
-    selectedGroceries.forEach(item => {
-      newSelection.push(item);
-    });
-    newSelection.push(grocery);
-
-    this.setState({ selectedGroceries: newSelection });
-  };
-
   render() {
     return (
       <>
@@ -38,7 +26,7 @@ class Grocery extends Component {
           key={this.props.index}
           onMouseEnter={this.handleMouseEnter}
           onMouseLeave={this.handleMouseLeave}
-          onClick={() => this.handleClick(this.props.grocery)}
+          onClick={() => this.props.onGroceryClick(this.props.grocery)}
         >
           <p
             className="groceries__item--plus"
