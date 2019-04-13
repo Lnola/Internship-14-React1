@@ -10,6 +10,7 @@
 .column__wrap {
   width: 40%;
   margin: 0 20px;
+  position: relative;
 }
 
 .groceries__item:nth-child(2n + 1) {
@@ -24,6 +25,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .groceries__item--plus {
@@ -32,4 +34,17 @@
   margin: 7px;
   border-radius: 7px;
   font-size: 25px;
+}
+
+.groceries__item--amount {
+  border: 2px solid black;
+  padding: 0 6px 3px 6px;
+  margin: 7px;
+  border-radius: 7px;
+}
+
+.clear__basket {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

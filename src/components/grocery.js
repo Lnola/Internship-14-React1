@@ -5,8 +5,7 @@ class Grocery extends Component {
     super(props);
 
     this.state = {
-      plusHoverClass: "",
-      selectedGroceries: []
+      plusHoverClass: ""
     };
   }
 
