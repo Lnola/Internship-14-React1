@@ -1,10 +1,14 @@
+* {
+  font-family: "Courier";
+}
+
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .column__title {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .column__wrap {
@@ -14,7 +18,7 @@
 }
 
 .groceries__item:nth-child(2n + 1) {
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.1);
 }
 
 .groceries__item {
@@ -26,21 +30,29 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  border-radius: 7px;
 }
 
 .groceries__item--plus {
-  border: 2px solid black;
-  padding: 0 6px 3px 6px;
+  border: 1px solid black;
+  border-radius: 5px;
   margin: 7px;
-  border-radius: 7px;
-  font-size: 25px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 15px;
+  height: 15px;
+  width: 15px;
+  padding: 0;
 }
 
 .groceries__item--amount {
-  border: 2px solid black;
-  padding: 0 6px 3px 6px;
+  border: 1px solid black;
+  height: 22px;
+  width: 22px;
+  text-align: center;
+  line-height: 25px;
   margin: 7px;
-  border-radius: 7px;
+  border-radius: 6px;
 }
 
 .clear__basket {

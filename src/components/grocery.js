@@ -10,7 +10,7 @@ class Grocery extends Component {
   }
 
   handleMouseEnter = () => {
-    this.setState({ plusHoverClass: "green" });
+    this.setState({ plusHoverClass: "#2ECC40" });
   };
 
   handleMouseLeave = () => {

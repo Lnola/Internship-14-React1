@@ -13,7 +13,7 @@ class Basket extends Component {
   }
 
   handleMouseEnter = () => {
-    this.setState({ minusHoverClass: "red" });
+    this.setState({ minusHoverClass: "#FF4136" });
   };
 
   handleMouseLeave = () => {
